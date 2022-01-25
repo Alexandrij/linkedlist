@@ -1,3 +1,3 @@
-module github.com/adimitriev/linkedlist
+module github.com/alexandrij/linkedlist
 
 go 1.17
