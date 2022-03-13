@@ -82,6 +82,17 @@ func (list *LinkedList) Remove(value interface{}) *Node {
 	return removed
 }
 
+func (list *LinkedList) RemoveHead() *Node {
+	head := list.head
+
+	if head != nil {
+		list.head = head.next
+		list.len--
+	}
+
+	return head
+}
+
 func New() *LinkedList {
 	//return &LinkedList{}
 	return new(LinkedList)
